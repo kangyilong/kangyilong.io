@@ -1,0 +1,34 @@
+$(function(){
+	$(window).scroll(function(){
+		if($('body').scrollTop()>0){
+			if($('body').scrollTop()>70){
+				$('.nav-wrapper').css('position','absolute');
+				$('.product-nav').css({
+					'position':'fixed',
+					'top':'0',
+				});
+			}else{
+				$('.nav-wrapper').css('position','fixed');
+				$('.product-nav').css({
+					'position':'absolute',
+					'top':'67px',
+				});
+			}
+		}else{
+			if($('body,html').scrollTop()>70){
+				$('.nav-wrapper').css('position','absolute');
+				$('.product-nav').css({
+					'position':'fixed',
+					'top':'0',
+				});
+			}else{
+				$('.nav-wrapper').css('position','fixed');
+				$('.product-nav').css({
+					'position':'absolute',
+					'top':'67px',
+				});
+			}
+		}
+		
+	})
+})
